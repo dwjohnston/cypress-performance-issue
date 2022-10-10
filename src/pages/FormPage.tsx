@@ -14,7 +14,13 @@ export const FormPage = (props: FormPageProps) => {
 
 
     return (
-        <div>
+        <div className="forms-page">
+
+            <div className ="sticky-header">
+                    <button>I am a button</button>
+            </div>
+
+            
 
             <form onSubmit={(e) => {
 
@@ -37,7 +43,7 @@ export const FormPage = (props: FormPageProps) => {
             </form>
 
 
-            {values.map((v) => <div>{v}</div>)}
+            {values.map((v) => <div className ="rendered-item">{v}</div>)}
 
         </div>
     );

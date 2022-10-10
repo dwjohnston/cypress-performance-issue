@@ -29,3 +29,38 @@ nav>* {
 .user-panel>span, .todo-panel>span {
   margin-left: 1em;
 }
+
+.tabslist {
+  display: flex; 
+  margin: 1em; 
+  padding: 1em; 
+}
+
+.tab {
+
+  border: solid 1px black; 
+  padding: 1em;
+}
+
+.tab.tab-selected {
+
+  border-bottom: 3px solid blue;
+}
+
+
+.forms-page>.sticky-header {
+  position: sticky; 
+  top:0; 
+
+  border: solid 1px black; 
+  padding: 1em; 
+}
+
+.rendered-item {
+  margin: 1em; 
+}
+
+
+body, #root, .forms-page {
+ border: solid 1px red; 
+}
