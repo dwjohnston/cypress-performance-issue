@@ -1,5 +1,7 @@
 import "/cypress/fixtures/mockUser";
 
+
+// Demonstrate using cypress fixtures functionality to mock API responses
 describe("mock user tests", () => {
   it("mock user fixture data", () => {
     cy.visit("http://localhost:3000");
