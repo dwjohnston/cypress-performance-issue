@@ -14,6 +14,7 @@ import { UsersPage } from './pages/UsersPage';
 import { TodosPage } from './pages/TodosPage';
 import { FormPage } from './pages/FormPage';
 import { TabsPage } from './pages/TabsPage';
+import { InputPage } from './pages/InputPage';
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/tabs", 
     element: <TabsPage/>
+  },
+  {
+    path: "/input", 
+    element: <InputPage/>
   }
 ]);
 const root = ReactDOM.createRoot(
@@ -46,12 +51,15 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
 
+
+
+
     <nav>
       <a href="/users">Users</a>
       <a href="/todos">Todos</a>
       <a href="/form">Form</a>
       <a href="/tabs">Tabs</a>
-
+      <a href ="/input">Input</a>
 
     </nav>
     <RouterProvider router={router} />
